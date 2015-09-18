@@ -14,7 +14,7 @@ git clone https://github.com/morganlutz/js-99-bottles-practice.git
 
 Navigate to the clone repository
 ```
-cd path/to/js-99-bottles-practice.git
+cd path/to/js-99-bottles-practice
 ```
 
 Open this project in your browser by running
