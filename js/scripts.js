@@ -1,4 +1,7 @@
 
+//this became quite large because I wasn't sure how to deal with the "bottle" vs. "bottles" problem
+//that you get to when bottle reaches 1.
+
 var playBottlesSong = function(numberOfBottles) {
   //debugger;
   if(numberOfBottles > 2) {
