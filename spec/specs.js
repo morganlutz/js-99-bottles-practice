@@ -11,5 +11,9 @@ describe('playBottlesSong', function() {
     expect(playBottlesSong(2)).to.equal("2 bottles of beer on the wall, 2 bottles of beer. Take one down and pass it around, 1 bottle of beer on the wall.");
   });
 
+  it("Returns correct line of song if number of bottles is greater than two", function() {
+    expect(playBottlesSong(3)).to.equal("3 bottles of beer on the wall, 3 bottles of beer. Take one down and pass it around, 2 bottles of beer on the wall.");
+  });
+
 
 });
