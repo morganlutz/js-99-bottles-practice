@@ -1,21 +1,22 @@
 
 var playBottlesSong = function(numberOfBottles) {
-  debugger;
+  //debugger;
   if(numberOfBottles > 2) {
-    return (numberOfBottles + " bottles of beer on the wall, "
+    return ("\n" + numberOfBottles + " bottles of beer on the wall, "
     + numberOfBottles + " bottles of beer. Take one down and pass it around, "
     + (numberOfBottles -1) + " bottles of beer on the wall.")
     + playBottlesSong(numberOfBottles - 1);
     } if(numberOfBottles === 2) {
-      return "2 bottles of beer on the wall, 2 bottles of beer."
-      + " Take one down and pass it around, 1 bottle of beer on the wall."
+      return ("\n2 bottles of beer on the wall, 2 bottles of beer."
+      + " Take one down and pass it around, 1 bottle of beer on the wall.")
       + playBottlesSong(numberOfBottles - 1);
     } if(numberOfBottles === 1) {
-      return "1 bottle of beer on the wall, 1 bottle of beer."
-      + " Take one down and pass it around, 0 bottles of beer on the wall."
+      return ("\n1 bottle of beer on the wall, 1 bottle of beer."
+      + " Take one down and pass it around, 0 bottles of beer on the wall.")
       + playBottlesSong(numberOfBottles - 1);
     } else {
-      return "No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall."
+      return ("\nNo more bottles of beer on the wall, no more bottles of beer."
+      + " Go to the store and buy some more, 99 bottles of beer on the wall.");
     }
 };
 
