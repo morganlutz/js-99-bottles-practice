@@ -5,20 +5,20 @@
 var playBottlesSong = function(numberOfBottles) {
   //debugger;
   if(numberOfBottles > 2) {
-    return ("\n" + numberOfBottles + " bottles of beer on the wall, "
+    return ("<br>" + numberOfBottles + " bottles of beer on the wall, "
     + numberOfBottles + " bottles of beer. Take one down and pass it around, "
     + (numberOfBottles -1) + " bottles of beer on the wall.")
     + playBottlesSong(numberOfBottles - 1);
     } if(numberOfBottles === 2) {
-      return ("\n2 bottles of beer on the wall, 2 bottles of beer."
+      return ("<br>2 bottles of beer on the wall, 2 bottles of beer."
       + " Take one down and pass it around, 1 bottle of beer on the wall.")
       + playBottlesSong(numberOfBottles - 1);
     } if(numberOfBottles === 1) {
-      return ("\n1 bottle of beer on the wall, 1 bottle of beer."
+      return ("<br>1 bottle of beer on the wall, 1 bottle of beer."
       + " Take one down and pass it around, 0 bottles of beer on the wall.")
       + playBottlesSong(numberOfBottles - 1);
     } else {
-      return ("\nNo more bottles of beer on the wall, no more bottles of beer."
+      return ("<br>No more bottles of beer on the wall, no more bottles of beer."
       + " Go to the store and buy some more, 99 bottles of beer on the wall.");
     }
 };
@@ -29,7 +29,7 @@ $(document).ready(function() {
 
     var result = playBottlesSong(numberOfBottles);
 
-    $(".answer").text(result);
+    $(".answer").html(result);
 
 
     $("#result").show();
